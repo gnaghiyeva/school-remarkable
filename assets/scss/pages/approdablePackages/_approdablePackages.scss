@@ -1,0 +1,125 @@
+main .packages {
+    font-family: $font;
+    width: 87%;
+    margin: 0 auto;
+
+    .packages-container {
+        width: 100%;
+        // border: 2px solid green;
+
+        
+        .texts {
+            article {
+                padding: 20px;
+
+                span {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.2px;
+                    color: $primary-green;
+                }
+
+                h1 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 50px;
+                    letter-spacing: 0.2px;
+                    color: #252B42;
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.2px;
+                    color: #737373;
+                }
+            }
+        }
+
+        .cards {
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            @include for-tablet-landscape-up {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+               
+           
+            .col-4 {
+                @include for-tablet-landscape-up {
+                    width: 44%;
+                   
+                }
+    
+            }
+
+            .col-md-6 {
+                @include for-mobile-landscape-up {
+                    width: 50%;
+                }
+            }
+    
+
+            .col-4 {
+                width: 33%;
+                // border: 2px solid red;
+
+                &:nth-child(3) {
+                    background-color: #96BB7C;
+                    
+                }
+
+                .card {
+                    padding: 40px 20px;
+                    text-align: left;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                    article {
+                        padding: 15px 0;
+
+                        span {
+
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 0.1px;
+                            color: #252B42;
+                        }
+
+                        hr {
+                            // width: 35%;
+                            width: 50px;
+                            height: 2px;
+                            border: 2px solid #E74040;
+                        }
+
+                        p {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0.2px;
+                            color: #737373;
+                        }
+                    }
+
+                  
+                }
+            }
+
+        }
+
+    }
+}

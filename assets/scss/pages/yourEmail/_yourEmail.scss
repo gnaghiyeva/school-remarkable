@@ -1,0 +1,65 @@
+main .yourEmail {
+    font-family: $font;
+     margin-top: 100px;
+
+    .email-container {
+        text-align: center;
+        .email-texts {
+            article {
+                h6 {
+                    color: $primary-green;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.2px;
+                    padding-top: 15px;
+                    
+                }
+
+                h3 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 0.1px;
+                    color: #252B42;
+                    padding-top: 15px;
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.2px;
+                    color: #737373;
+                    padding-top: 15px;
+
+                }
+            }
+        }
+
+        .row{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            .col-md-8{
+                .submit{
+                    display: flex;
+                    input{
+                        padding: 10px 100px;
+                        background-color: #F9F9F9;
+                        border: none;
+                    }
+                    button{
+                        background-color: $primary-green;
+                        padding: 10px 20px;
+                        border: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

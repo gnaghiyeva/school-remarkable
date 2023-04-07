@@ -1,0 +1,109 @@
+main .quality {
+    font-family: $font;
+    margin-top: 100px;
+    padding: 0 100px;
+    .quality__texts {
+        article {
+            h6 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: $primary-green;
+            }
+
+            h2 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 50px;
+                letter-spacing: 0.2px;
+                color: #252B42;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                color: #737373;
+            }
+        }
+    }
+
+    .row {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include for-tablet-landscape-up{
+            .col-md-6{
+                width: 100%;
+                padding-bottom: 15px;
+                align-items: center;
+            }
+        }
+
+        
+        @include for-mobile-landscape-up{
+            .col-sm-6{
+                width: 100%;
+                padding-bottom: 15px;
+                align-items: center;
+            }
+        }
+
+        .col-6 {
+            .quality-card {
+                text-align: center;
+                margin-top: 50px;
+                // border: 2px solid violet;
+                .image {
+                    img {
+                        
+                        border-radius: 50%;
+                    }
+                }
+
+                .quality-texts {
+                    #quality-parag {
+                        padding-top: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.2px;
+                        color: #737373;
+                    }
+                    img{
+                        padding-top: 15px;
+                    }
+
+                    h5 {
+                        padding-top: 15px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.1px;
+                        color: #252B42;
+                    }
+
+                    h6 {
+                        padding-top: 15px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: 0.2px;
+                        color: #737373;
+
+                    }
+                }
+            }
+        }
+    }
+}

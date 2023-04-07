@@ -1,0 +1,30 @@
+footer {
+    margin: 40px 0;
+    font-family: $font;
+    padding: 0 60px;
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        .footer-text{
+            h6 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: #737373;
+    
+            }
+        }
+
+        .footer-icons{
+            
+            justify-content: space-between;
+            gap: 20px;
+            i{
+                font-size: 22px;
+                margin-right: 20px;
+            }
+        }
+    }
+}

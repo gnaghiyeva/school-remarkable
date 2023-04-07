@@ -1,0 +1,40 @@
+main .companies {
+  
+    margin-top: 100px;
+    width: 100%;
+    padding: 50px 0;
+    // background-color: aqua;
+
+    .company-container {
+        padding: 0 150px;
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        align-items: center;
+
+        @include for-tablet-landscape-up {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .col-2 {
+            @include for-tablet-landscape-up {
+                margin-top: 100px;
+                width: 25%;
+                gap: 20px;
+            }
+
+        }
+
+        .col-md-4 {
+            @include for-mobile-landscape-up {
+                width: 50%;
+
+            }
+        }
+    }
+
+
+}
